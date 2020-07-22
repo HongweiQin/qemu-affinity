@@ -12,13 +12,21 @@ isolcpus=15-47
 
 sudo xxx
 
+## Check The PIDs of QEMU Threads.
+
+Only check child threads.
+
+```
+./qemu-affinity
+```
+
 ## Set Affinity For QEMU Threads.
 
 E.g.
 
 ```
-./qemu-affinity 33 15
+sudo ./qemu-affinity 33 15
 ```
 
-Read the scripts FMI.
+Not all threads need to be touched. Read the scripts and do some VM stress experiments FMI.
 
